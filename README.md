@@ -24,4 +24,3 @@ Quick start
 Notes
 - `node_modules` are intentionally excluded from the repo. Use `npm install` in each folder before running.
 - The server uses a unique index on `email` to prevent duplicate submissions.
-# google-form-clone
