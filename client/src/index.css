@@ -18,7 +18,6 @@
         -webkit-outline: none !important;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-color: #34d399;
-        /* green-400 */
     }
 
     textarea:focus {
@@ -28,7 +27,6 @@
         border-color: #34d399;
     }
 
-    /* Hide number input spin buttons while keeping input styling consistent */
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button {
         -webkit-appearance: none;
@@ -40,9 +38,6 @@
         appearance: textfield;
     }
 
-    /* react-select styling moved into SelectField.jsx via its `styles` prop */
-
-    /* consistent radio / checkbox size & accent */
     input[type="radio"],
     input[type="checkbox"] {
         @apply accent-green-600 w-4 h-4;

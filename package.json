@@ -8,7 +8,7 @@
   "scripts": {
     "server": "npm run start --workspace=server",
     "client": "npm run dev --workspace=client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "node api.js && concurrently \"npm run server\" \"npm run client\"",
     "i-all": "npm install --workspace=client && npm install --workspace=server"
   },
   "devDependencies": {
