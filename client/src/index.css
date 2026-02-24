@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .shadow-custom {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .input {
+        @apply w-full bg-white border border-gray-200 rounded-md p-3 text-base text-gray-800;
+        transition: box-shadow 0.12s ease, border-color 0.12s ease;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .input:focus {
+        outline: none !important;
+        -webkit-outline: none !important;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-color: #34d399;
+        /* green-400 */
+    }
+
+    textarea:focus {
+        outline: none !important;
+        -webkit-outline: none !important;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-color: #34d399;
+    }
+
+    /* Hide number input spin buttons while keeping input styling consistent */
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+    /* react-select styling moved into SelectField.jsx via its `styles` prop */
+
+    /* consistent radio / checkbox size & accent */
+    input[type="radio"],
+    input[type="checkbox"] {
+        @apply accent-green-600 w-4 h-4;
+    }
+
+    .section-card {
+        @apply bg-white rounded-lg border border-gray-100 mb-4;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .question-card {
+        @apply bg-white rounded-lg border border-gray-100 mb-4 overflow-hidden;
+    }
+
+    .question-card>.h-3 {
+        height: 12px;
+    }
+
+    .form-banner {
+        @apply rounded-lg overflow-hidden mb-6;
+    }
+}
